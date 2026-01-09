@@ -17,3 +17,54 @@ print("B1     CPU             60000")
 print("C1     GPU             50000")
 print("D1     FAN             20000")
 print("="*40)
+
+
+nama_barang = []
+qty = []
+harga = []
+subtotal = []
+
+jumlah_item = int(input("Masukkan jumlah barang: "))
+
+for i in range(jumlah_item):
+    print(f"\nBarang ke-{i+1}")
+
+    kode = input("Kode barang [A1/B1/C1/D1]: ").upper()
+    jumlah = int(input("Jumlah          : "))
+
+    if kode == "A1":
+        nama = "RAM"
+        hrg = 35000
+    elif kode == "B1":
+        nama = "CPU"
+        hrg = 60000
+    elif kode == "C1":
+        nama = "GPU"
+        hrg = 50000
+    elif kode == "D1":
+        nama = "FAN"
+        hrg = 20000
+    else:
+        print("Kode barang salah!")
+        
+
+    nama_barang.append(nama)
+    qty.append(jumlah)
+    harga.append(hrg)
+    subtotal.append(jumlah * hrg)
+
+print("\n" + "="*70)
+print("No  Nama Barang        Jumlah     Harga        Subtotal")
+print("="*70)
+
+total = 0
+for i in range(len(nama_barang)):
+    print(f"{i+1:<3} {nama_barang[i]:<18} {jumlah[i]:<10} {harga[i]:<12} {subtotal[i]}")
+    total += subtotal[i]
+
+print("="*70)
+
+
+diskon = 0
+pajak = total * 0.1
+grand_total = total - diskon + pajak
