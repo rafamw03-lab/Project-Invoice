@@ -68,3 +68,17 @@ print("="*70)
 diskon = 0
 pajak = total * 0.1
 grand_total = total - diskon + pajak
+
+print(f"Gross Total     : Rp {total}")
+print(f"Diskon          : Rp {diskon}")
+print(f"Pajak 10%       : Rp {int(pajak)}")
+print("="*70)
+print(f"NET TOTAL       : Rp {int(grand_total)}")
+print("="*70)
+
+print("Transfer Via:")
+print("BCA - IDR")
+print("A/C : 164-800-3321")
+print("A/N : PT. SAMPLE SARANA ABADI")
+print("="*70)
+print("Terima kasih atas kepercayaan Anda")
