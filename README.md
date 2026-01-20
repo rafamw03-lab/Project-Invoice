@@ -1,3 +1,7 @@
+#Studi Kasus 
+![WhatsApp Image 2025-12-19 at 15 22 08](https://github.com/user-attachments/assets/569658d7-b075-4245-b9fa-6b687a6af10f)
+
+
 # Program Invoice Python
 
 Program ini digunakan untuk membuat **invoice penjualan sederhana** menggunakan Python.
@@ -82,3 +86,8 @@ Program menampilkan:
 - Net Total
 - Informasi rekening pembayaran
 - Ucapan terima kasih
+
+Flowchart
+<img width="541" height="2270" alt="Psi drawio" src="https://github.com/user-attachments/assets/d57d0250-2559-4703-b1d6-c6b6a391180e" />
+
+
